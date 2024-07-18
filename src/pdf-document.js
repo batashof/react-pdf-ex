@@ -16,7 +16,7 @@ export const MyDocument = ({data}) => {
     console.log(data?.get('color'))
     return (
         <Document>
-            <Page size="A4" style={{backgroundColor: data?.get('color') ?? 'red'}}>
+            <Page size="A4" style={{backgroundColor: data?.get('color')}}>
                 <View style={styles.section}>
                     <Text>{data?.get('firstName')}  {data?.get('lastName')}</Text>
                     <Text>{data?.get('role')}</Text>
