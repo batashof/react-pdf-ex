@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
 });
 
 export const MyDocument = ({data}) => {
-    console.log(data?.get('color'))
     return (
         <Document>
             <Page size="A4" style={{backgroundColor: data?.get('color')}}>
